@@ -1,0 +1,11 @@
+<p>create-student works!</p>
+<div *ngFor="let s of students">
+
+    Name {{s.name}},age {{s.age}}
+    <button (click)="del(s.id)">delete</button>
+    <button (click)="upd(s.id, age.value,name.value)">update</button>
+</div>
+<hr>
+Name<input #name>
+Age <input #age>
+<button (click)="create(age.value,name.value)">Create</button>

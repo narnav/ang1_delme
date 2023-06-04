@@ -1,0 +1,9 @@
+<p>baga works!</p>
+<button (click)="cngColor()" [style.background-color]="style">test</button>
+
+{{students | json}}
+
+<div *ngFor="let student of students">
+    Name: {{student.name}},Age: {{student.age}}
+
+</div>
